@@ -331,10 +331,12 @@ margin: 10px;
 .Dot {    
 margin-left: 680px;
     margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 .Dot1 {
     margin-top: 20px;
+     margin-bottom: 20px;
 }
 .Contact {
     height: 100%;
