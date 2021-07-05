@@ -5,6 +5,8 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 101;
 }
 
 .logo{
@@ -12,12 +14,42 @@ nav{
     font-size: 25px;
     line-height: 60px;
     padding-left: 250px;
-    float: left
+    float: left;
+-webkit-animation: coming 2s ease;
+-o-animation: coming 2s ease;
+animation: coming 2s ease;
+    
+}
+@keyframes TitleMove{
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 250px;
+    }
 }
 .menu{
     float: left;
     padding-left: 230px;
 
+}
+.menu li a{
+    transition: all 0.1s; 
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited {
+    color: white;
+}
+.menu li a:hover {
+    color: orange ;
+    
+}
+.menu li a:active {
+     transform: scale(1.1);
 }
 .menu li{
     float: left;
@@ -26,6 +58,25 @@ nav{
     margin-right: 25px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: TopShift 0.4s ease forwards;
+    -o-animation: TopShift 0.4s ease forwards;
+    animation: TopShift 0.4s ease forwards;  
+    opacity: 0;
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
 }
 .main{
     width: 100%;
@@ -37,15 +88,51 @@ nav{
     margin: 280px 0px 0px 250px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: TitleMove 1s ease forwards;
+    -o-animation:TitleMove 1s ease forwards;
+    animation: TitleMove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay:2.4s ;
+    animation-delay:2.4s ;
 }
 .title__container h1{
     font-size: 40px;
     font-weight: 600;
 }
+.title__container input {
+    transition: all 0.1s;
+    transform: scale(1);
+}
+.title__container input:hover {
+    background: #344051;
+    color: white;
+}
+.title__container input:active {
+    transform: scale(1.1)
+}
 .title__container h4{
     margin-top: 25px;
     font-size: 20px;
     color: #79818d;
+}
+@keyframes coming {
+    from {
+        opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+@keyframes TopShift {
+    from{
+        opacity: 0;
+        margin-top: -100px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
 .title__container input{
     height: 40px;
@@ -63,6 +150,7 @@ nav{
     height: 100%;
     background:  url(../img/AboutMeBoy.png) 52% no-repeat ,url(../img/AboutMeBG.jpg) center/cover no-repeat;
 }
+
 .Information1 h2{
     padding-left: 640px;
    padding-top: 100px;
@@ -79,10 +167,20 @@ nav{
     padding-top: 350px;
     color: #717883;
     font-weight: 550;
+      word-break: break-all;
+    width: 1100px;
+    
+     padding-left: 420px;
 }
 .Information1 span{
     color: #717883;
     font-weight: 550;
+    word-break: break-all;
+    width: 1100px;
+    margin-top: 10px;
+      padding-left: 420px;
+    display: block;
+
 }
 .Information1 input{
     height: 25px;
@@ -92,14 +190,21 @@ nav{
     color: #717883;
     font-size: 13px;
     font-weight: 550;
-    margin: 25px 640px;
+    margin: 2px 640px;
     padding: 0px 10px 0px 25px;
-    background: url(../img/download.png) 4%/14px no-repeat;  
+    background: url(../img/download.png) 4%/14px no-repeat ; 
+     transform: scale(1)
+}
+.Information1 input:hover {
+  transform: scale(1.1);
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      
 }
 .Information {
     width: 100%;
     height: 100%;
     background: url(../img/WhatCanIDo.jpg) center/cover no-repeat;
+    
 }
 .Information h2{
   padding-left: 628px;
@@ -113,9 +218,30 @@ nav{
 }
 .Craft{
     float: left;
+    position: relative;
+    bottom: 2px;
 }
 .CEOopt {
     float: left;
+    position: relative;
+    bottom: 2px;
+}
+#RocketImg {
+    position: relative;
+    bottom: 1px;
+    right: 15px;
+}
+#spanRocket {
+    position: relative;
+    bottom: 6px;
+}
+#CraftH4 {
+    position: relative;
+    left: 3px;
+}
+#CEOoptH4 {
+    position: relative;
+    right: 35px;
 }
 .Information h4 {
     font-size: 20px;
@@ -131,6 +257,8 @@ nav{
 }
 .Marcs {
     float: left;
+    position: relative;
+    bottom: 3px;
 }
 .List {
     margin: 20px;
@@ -182,6 +310,13 @@ nav{
     font-weight: 600;
     color: white;
     background: #63b5ae;
+     display: inline-block;
+    transform: rotate(0deg) scale(1);
+    
+}
+.Keys input:hover {
+    transform: scale(1.1) rotate(10deg);
+    margin-top: 20px; 
 }
 .Keys h4{
     font-size: 20px;
@@ -222,7 +357,7 @@ margin: 10px;
     color: #263244;
 }
 .PayCalculator h3 {
-    padding-left: 620px;
+    padding-left: 280px;
     font-size: 25px;
     margin-top: 20px;
     font-weight: 600;
@@ -269,6 +404,16 @@ margin: 10px;
 .Smile {
     float: left;
 }
+#HappyClient {
+ position: relative;
+    left: 5px;
+    bottom: 20px;
+}
+#HappyZero {
+    position: relative;
+    right: 5px;
+    bottom: 10px;
+}
 .WorkTime {
     float: left;
 }
@@ -289,16 +434,30 @@ margin: 10px;
 }
 #Goblet1 {
     padding-left: 1200px;
+    position: relative;
+    right: 2.5px;
 }
 #Brackets {
     padding-left: 85px;
 
+    
+
 }
 #Goblet2 {
-    padding-left: 110px
+    padding-left: 110px;
+    position: relative;
+    right: 5px;
 }
 #Brackets1 {
     padding-left: 180px;
+}
+#Tick {
+    position: relative;
+    right: 15px;
+}
+#Tick1 {
+    position: relative;
+    right: 20px;
 }
 .Reviews {
  background: url(../img/AboutMeBG.jpg) center/cover no-repeat;
@@ -366,14 +525,16 @@ margin-left: 680px;
 }
 .Contact input{
         height: 30px;
-    color: #d1d5db;
+    color: black;
+    background:#d1d5db;
 }
 .Contact textarea {
     margin-left: 520px;
     margin-top: 10px;
     margin-bottom: 30px;
     width: 345px;
-    color: #d1d5db;
+    color: black;
+    background: #d1d5db;
 }
 .Adress {
     float: left;
@@ -404,4 +565,11 @@ margin-left: 680px;
     padding: 3px;
     font-weight: 600;
     color: white;
+}
+#Send:hover {
+   
+    background: #060330;
+    color: white;
+    transform: scale(1.2) rotate(-2deg)
+
 }
