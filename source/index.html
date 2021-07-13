@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 <head>
     <meta charset="UTF-8">
@@ -8,13 +9,16 @@
     <meta name="author" content="Aleksey Scherbakov">
     <meta name="robots" content="all">
     <meta property="og:title" content="It's my first page...">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Алексей Щербаков- веб-разработчик</title>
 </head>
 <body>
 <header> 
 <nav>
-    <div class="logo">Алексей Щербаков</div>
-    <div class="menu">
+   <div class="container">
+   <div class="row">
+   <div class="col-xl-2 col-xxl-2 col-lg-3 col-7"><div class="logo">Алексей Щербаков</div></div>
+   <div class="px-0 col-xl-6 offset-xl-4 offset-xxl-3 col-xxl-7 col-lg-8 offset-lg-1 d-none d-lg-block"><div class="menu">
        <ul>
         <li><a href="#">обо мне</a></li>
         <li><a href="#">услуги</a></li>
@@ -23,60 +27,87 @@
         <li><a href="#">отзывы</a></li>
         <li><a href="#">контакты</a></li>
     </ul>
-    </div>
+    </div></div>
+    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end "><div class="dropdown">
+  <a class="btn btn-outline-secondary  dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>Навигация
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+       <li><a class="dropdown-item" href="#">Обо мне</a></li>
+        <li><a class="dropdown-item" href="#">Услуги</a></li>
+        <li><a class="dropdown-item" href="#">Кейсы</a></li>
+        <li><a class="dropdown-item" href="#">Прайс</a></li>
+        <li><a class="dropdown-item" href="#">Отзывы</a></li>
+        <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div></div>
+   </div>
+   </div>
+
 </nav>            
 </header>
 <div class="main">
-    <div class="title__container">
+   <div class="container h-100"><div class="row align-items-center h-100" ><div class="col-lg-6 mt-5 pt-5">  <div class="title__container mt-5">
         <h1>Привет <br>Я Алексей Щербаков</h1>
         <h4>Фулл стек веб-разработчик</h4>
         <input type="button" value="обо мне">
-        <input type="button" value="мои работы">
-        
+        <input type="button" value="мои работы"></div></div></div>
     </div>
 </div>
-<div class="Information1">
-<h2>Обо мне</h2>
+<div class="container"><div class="row align-items-center"><div class="Information1">
+<div class="col-xxl-2 offset-xxl-6 col-xl-3 offset-xl-6 col-lg-3 offset-lg-5 col-sm-3 offset-sm-5"><h2>Обо мне</h2>
 <img src="img/TopLine.png" alt="" class="lineABME">
-
-<div>
+</div>
+<div><div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-9 offset-lg-2 ">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, quas error. Porro iusto veritatis ex repellat. minima, mollitia voluptatibus excepturi asperiores dolore, quisquam eaque expedita aspernatur quo ipsum!</p>  
   <br><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere officia eos consectetur ea optio consequatur quos culpa doloribus. Facere sequi, nostrum?</span>
-  <br><input type="submit" value="Скачать резюме">
+  </div>
+  <br><div class="col-xxl-2 offset-xxl-6 col-xl-3 offset-xl-6 col-lg-3 offset-lg-5 col-sm-3 offset-sm-5"><div class="INPTINF1"><input type="submit" value="Скачать резюме"></div></div>
 </div>
-</div>
-<div class="Information">
-    <h2>Что я умею</h2>
-    <img src="img/TopLine.png" alt="" class="lineABME">
-    <div class="List">
-    <div class="Web_Disgn">
+</div></div></div>
+<div class="InformationBG">
+<div class="container"><div class="Information">
+    <div class="col-xxl-2 offset-xxl-6 col-xl-3 offset-xl-6 col-lg-3 offset-lg-5 col-sm-4 offset-sm-4"><h2 class="WCIDH2">Что я умею</h2>
+    <img src="img/TopLine.png" alt="" class="lineABME"></div>
+    <div class="row">
+     <div class="List">
+     <div class="col">
+   <div class="Web_Disgn">
     <h4>Веб-дизайн</h4>
     <img src="img/NoteBook.png" alt="">
     <br><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime optio incidunt nisi pariatur, itaque reprehenderit recusandae dicta voluptates quas illum.</span>
-    </div>
+    </div></div>
+    <div class="col">
     <div class="Craft">
     <h4 id="CraftH4" >Разработка</h4>
     <img src="img/Code.png" alt="">
-    <br><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facilis cupiditate, tempora qui deleniti quas error dolores corporis odio.</span>
+    <br><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facilis cupiditate, tempora qui deleniti quas error dolores corporis odio.</span></div>
     </div>
+     <div class="col">
     <div class="CEOopt">
     <h4 id="CEOoptH4" >CEO-оптимизация</h4>
     <img id="RocketImg" src="img/rocket.png" alt="">
     <br><span id="spanRocket">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, hic. Nostrum commodi dignissimos tempora, nam dicta et vitae repudiandae.</span>
-    </div>
+    </div></div>
+     <div class="col">
     <div class="Marcs">
    <h4>Маркетинг</h4>
     <img src="img/Gramophone.png" alt="">
     <br><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea consectetur soluta ipsa molestias, architecto facilis saepe!</span>
-    </div>
-    </div>
-</div>
+   </div> </div></div></div>
+    
+    
+    
+</div></div></div>
 <div class="BGKeys">
-<div class="Keys">
-    <h2>Кейсы</h2>
-    <img src="img/TopLine.png" alt="" class="lineABME">
-    <br><span id="Bottomkeys">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aperiam nesciunt ipsam soluta enim quasi, quam eum fuga</span>
-    <img src="img/TamplateKeys.jpg" alt="" id="TamplateKeys">
+<div class="container"><div class="row"><div class="Keys">
+    <div class="col-xxl-2 offset-xxl-6 col-xl-3 offset-xl-6 col-lg-3 offset-lg-5 col-sm-3 offset-sm-5"><h2 class="KeysH2">Кейсы</h2>
+    <img src="img/TopLine.png" alt="" class="lineABME"></div>
+    <br><div class="col-xxl-9 offset-xxl-2 col-xl-10 offset-xl-1 col-lg-12"><p id="Bottomkeys">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aperiam nesciunt ipsam soluta enim quasi, quam eum fuga</p></div>
+    <img src="img/TamplateKeys.jpg" width="100%" alt="" id="TamplateKeys">
     <div class="ClientWbFl">
     <h3>Client:</h3>               
     <span id="Client">Lorem ipsum dolor sit amet, consectetur.</span>
@@ -84,12 +115,16 @@
     <span class="ClientAndWb">www.somedomin.com</span>
     <br><input type="submit" value="Visit Live Site">
     </div>
+    <div class="NameProject1">
     <h4>Название проекта:</h4>
     <span id="NameProject">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi, placeat dolorum error officia libero mollitia explicabo saepe distinctio? Quos dicta odio modi odit, aspernatur eligendi ad.Similique autem neque cum dolorem cumque pariatur harum porro reprehenderit possimus, asperiores a iure earum amet, deleniti ullam blanditiis aperiam, deserunt aspernatur.</span>
+    </div></div></div></div>
+
     </div>
-    </div>
-    <div class="PayCalculator">
-        <H2>Расчет стоимости</H2>
+    <div class="PayCalculatorBG">
+    <div class="container"><div class="row"><div class="PayCalculator">
+        <div class="col-xxl-2 offset-xxl-6 col-xl-5 offset-xl-4 col-lg-3 offset-lg-5 col-sm-3 offset-sm-5"><H2>Расчет стоимости</H2></div>
+        <div class="col-xxl-10 offset-xxl-2 col-xl-10 offset-xl-2 coll-lg-10 offset-lg-2 coll-md-10 offset-md-2 col-sm-10 offset-sm-2">
         <h3>Тип сайта</h3>
         <form action="a">
         <select name="TypeSite" id="list" >
@@ -113,6 +148,7 @@
             <option value="opt6"></option>
             <option value="opt7"></option>
         </select>
+        
         <H3>Адаптивность</H3>
         <select name="Adaptability" id="list3">
              <option class="Def" value="" disabled selected>Выберите пункт...</option>
@@ -121,10 +157,13 @@
             <option value="opt3">Только ПК</option>
             <option value="opt4">Кроссплатформенность</option>
         </select>
-        <img id="LineBottomPayCalc" src="img/LineBottomPayCalc.png" alt="">
+         <img id="LineBottomPayCalc" src="img/LineBottomPayCalc.png" alt="">
         <p>Сроки</p>
         <p>Стоимость</p>
         </form>
+        </div>
+        </div></div></div>
+    </div>
     <div class="Stat">
         <h2>Немного статистики</h2>
         <img src="img/TopLine.png" alt="" class="lineABME">
@@ -185,5 +224,6 @@
     <br><input id="Send" type="submit" value="Отправить">
     </form>
     </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
