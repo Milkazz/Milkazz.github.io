@@ -127,7 +127,7 @@ animation: coming 2s ease;
     }
     
 }
-@media (max-width:525px) {
+/*@media (max-width:525px) {
     .Information1 p, .Information1 span, .Information1 h2, .Information1 input  {
         color: white;
           position: relative;
@@ -145,7 +145,7 @@ animation: coming 2s ease;
         position: absolute;
         background: rgba(0,0,0,0.4)
     }
-}
+}*/
 .title__container input {
     transition: all 0.1s;
     transform: scale(1);
@@ -193,8 +193,7 @@ animation: coming 2s ease;
 .Information1 {
     width: 100%;
     height: 100%;
-    background:  url(../img/AboutMeBoy.png) no-repeat;
-    background-position: 55% 50%;
+    background: ;
     color: #263244;
     
 }
@@ -205,18 +204,20 @@ animation: coming 2s ease;
     font-weight: 600;
     
 }
-@media (max-width:576px){
-    .lineABME,.Information1 h2, .INPTINF1, .KeysH2 , .WCIDH2 {
-        padding-left: 40%;
+
     }
 }
+#lineABME2 {
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
 .lineABME {
-  
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
 }
 .Information1 p{
-    padding-top: 350px;
+
    
     
     font-weight: 550;
@@ -261,43 +262,14 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
     font-weight: 600;
     color: #263244;
 }
-.Web_Disgn {
-    float: left;
-}
-.Craft{
-    float: left;
-}
-.CEOopt {
-    float: left;
-}
-.Marcs {
-    float: left;
-}
 .Information h4 {
     font-size: 19px;
     color: #cf7600;
     position: relative;
-    left: 25%;
-}
-.Information span{
-    display: block;
-    width: 300px;
-    height: 30px;
-    margin-top:10px;
    
-}
-.Marcs {
-    float: left;
-    position: relative;
-    bottom: 3px;
 }
 .List {
     margin-top: 20px;
-}
-.List img {
-    margin-top: 10px;
-    position: relative;
-    left: 37%;
 }
 .BGKeys {
     background: #fcfdfd;
@@ -375,6 +347,7 @@ margin: 10px;
 }
 .PayCalculatorBG {
    background: url(../img/AboutMeBG.jpg) center/cover no-repeat;
+margin-bottom: 10%;
 }
 .PayCalculator {
 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -403,137 +376,67 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 .Def {
     color: #7d7d7d;
 }
-@media (max-width:768px){
-    #LineBottomPayCalc { 
-    width: 300px;       
-}
-
 .PayCalculator p{
     font-size: 20px;
     color: #1c2534;
     font-weight: 600
     
 }
-.Stat {
+.StatBG {
     background: url(../img/BGStat.jpg) center/cover no-repeat;
   
 }
 .Stat h2 {
-    padding-left: 550px;
-   padding-top: 100px;
+   
     font-size: 30px;
     font-weight: 650;
-    color: #263244;
+    color: #263247;
+   
 }
 .Stat span{
     font-size: 20px;
     font-weight: 700;
-   padding-left: 145px;
-}
-.Smile {
-    float: left;
-}
-#HappyClient {
- position: relative;
-    left: 5px;
-    bottom: 20px;
-}
-#HappyZero {
-    position: relative;
-    right: 5px;
-    bottom: 10px;
-}
-.WorkTime {
-    float: left;
-}
-.ProjectFinish {
-    float: left;
 
 }
 .ListStat img{
     margin-top: 30px;
-    padding-left: 135px;
-    margin-left: 100px;
     margin-bottom: 20px;
         
 }
 .ListStat p{
-    margin-left: 30px;
-    padding-left: 230px;
-}
-#Goblet1 {
-    padding-left: 1200px;
-    position: relative;
-    right: 2.5px;
-}
-#Brackets {
-    padding-left: 85px;
-
-    
 
 }
-#Goblet2 {
-    padding-left: 110px;
-    position: relative;
-    right: 5px;
-}
-#Brackets1 {
-    padding-left: 180px;
-}
-#Tick {
-    position: relative;
-    right: 15px;
-}
-#Tick1 {
-    position: relative;
-    right: 20px;
-}
+
 .Reviews {
  background: url(../img/AboutMeBG.jpg) center/cover no-repeat;
 }
 .Reviews h2{
-    padding-left: 640px;
-   padding-top: 100px;
     font-size: 30px;
     font-weight: 650;
     color: #263244
 }
 #ManReviews {
-    padding-left: 650px;
 }
 .Reviews p{
     text-align: center;
-    width: 800px;
     height: 160px;
-    margin-left: 150px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  
 }
 .Reviews span {
     text-align: center;
-    margin-left: 590px;
-    margin-top: 20px;
    
    
 }
 .Dot {    
-margin-left: 680px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+   
     
 }
 .Dot1 {
-    margin-top: 20px;
-     margin-bottom: 20px;
 }
 .Contact {
-    height: 100%;
-    width: 100%;
     background: url(../img/ContacrBG.jpg) center/cover no-repeat;
 }
 .Contact h2{
-     padding-left: 600px;
-   padding-top: 100px;
     font-size: 30px;
     font-weight: 650;
     color: white;
@@ -542,15 +445,11 @@ margin-left: 680px;
     color: white;
     font-size: 15px;
     font-weight: 500;
-    padding-left: 400px;
 }
 .Contact h3 {
     color: white;
-    text-align: center;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px;
-    padding-left: 50px;
 }
 .Contact input{
         height: 30px;
@@ -558,36 +457,27 @@ margin-left: 680px;
     background:#d1d5db;
 }
 .Contact textarea {
-    margin-left: 520px;
-    margin-top: 10px;
-    margin-bottom: 30px;
     width: 345px;
     color: black;
     background: #d1d5db;
 }
 .Adress {
-    float: left;
 }
 .EmailA {
-    float: left;
+    
 }
 .Contact1 img {
-    padding-left: 320px;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 #NomberPhone {
-    padding-left: 1070px;
+  
 }
 .Contact1 p {
-    padding-left: 290px
+    
 }
 .NameAndEmail {
-    padding-left: 520px
+
 }
 #Send {
-    margin-left: 650px;
-    margin-bottom: 100px;
     background: none;
     border: 1px solid;
     border-radius: 5px;
